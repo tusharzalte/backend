@@ -18,7 +18,7 @@ app.use("/users", userRoutes);
 const PORT = process.env.PORT || 5000;
 
 mongoose
-  .connect(process.env.CONNECTION_URL)
+  .connect("mongodb+srv://Tushar:AIMpEPMH9lIrE79a@cluster0.turjukc.mongodb.net/tusharresumesume")
   .then(() =>
     app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
   )
